@@ -16,6 +16,12 @@ public class Main {
                     b= sc.nextInt();
                     x=a+b;
                     System.out.println(a+"+"+b+"="+x);
+                case 2:
+                    System.out.println("ENTER 2 NUMBERS:");
+                    a= sc.nextInt();
+                    b= sc.nextInt();
+                    x=a-b;
+                    System.out.println(a+"-"+b+"="+x);
             }
         }while(c!=4);
     }
