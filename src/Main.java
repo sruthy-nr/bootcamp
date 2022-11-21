@@ -28,7 +28,13 @@ public class Main {
                     b= sc.nextInt();
                     x=a*b;
                     System.out.println(a+"*"+b+"="+x);
+                case 4:
+                    System.out.println("ENTER 2 NUMBERS:");
+                    float y= sc.nextFloat();
+                    float z= sc.nextFloat();
+                    float f=y/z;
+                    System.out.println(y+"/"+z+"="+f);
             }
-        }while(c!=4);
+        }while(c!=5);
     }
 }
