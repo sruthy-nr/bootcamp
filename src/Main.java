@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main{
+    public static void main(String[] args){
         int c,a,b,x;
         Scanner sc=new Scanner(System.in);
         do {
@@ -32,10 +32,15 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("ENTER 2 NUMBERS:");
-                    float y= sc.nextFloat();
-                    float z= sc.nextFloat();
-                    float f=y/z;
-                    System.out.println(y+"/"+z+"="+f);
+                    int y= sc.nextInt();
+                    int z= sc.nextInt();
+                    try {
+                        int f=y/z;
+                        System.out.println(y+"/"+z+"="+f);
+                    }
+                    catch (ArithmeticException e){
+                        System.out.println("Error message "+e);
+                    }
                     break;
                 case 5:
                     System.out.println("Exiting...");
